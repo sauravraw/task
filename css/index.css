@@ -63,3 +63,15 @@
   right: 0;
   bottom: 0;
 }
+
+.method1 div {
+  color: green;
+}
+
+.method2 div {
+  color: red;
+}
+
+.method3 div {
+  color: purple;
+}

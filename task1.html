@@ -5,9 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="css/index.css" />
     <script src="task1.js"></script>
   </head>
   <body>
-    press f12 for output
+    <center>
+      <b> Press f12 for output </b>
+    </center>
+    <br /><br />
+    <div class="method1">
+      <b>Method 1</b> <br />
+      the value of a will be undefined in function abc() because if the variable
+      declare <br />
+      the console won't find the value of a <br />
+      where as reason is when the program execute it will check which variable
+      declare inside the function and which variable declare outside the
+      function <br />
+      here when the variable a = 345 declare after the console it won't find it
+      and the value will be undefined in console
+      <div>
+        var a = 123; <br />
+        function abc() { <br />
+        console.log("Value of a: ", a); <br />
+        var a = 345; <br />
+        } <br />
+        abc();
+
+        <br />
+        <br />
+        Output: undefined
+      </div>
+    </div>
+
+    <br />
+    <br />
+
+    <div class="method2">
+      <b>Method 2</b> <br />
+      the same program written here but the output will be 345 as the variable
+      declare <br />
+      within the function pqr() before the console so it will execute the
+      variable a as 345 <br />
+      <div>
+        var a = 123; <br />
+        function pqr() { <br />
+        var a = 345; <br />
+        console.log("Value of a: ", a); <br />
+        } <br />
+        pqr();
+        <br />
+        <br />
+        Output: 345
+      </div>
+    </div>
+
+    <br />
+    <br />
+
+    <div class="method3">
+      <b>Method 3</b> <br />
+      the same program written here but the output will be 123 as the variable
+      declare <br />
+      outside the function xyz() so console will execute the variable a as 123
+      <br />
+      <div>
+        var a = 123; <br />
+        function xyz() { <br />
+        console.log("Value of a: ", a); <br />
+        } <br />
+        xyz();
+        <br />
+        <br />
+        Output: 123
+      </div>
+    </div>
   </body>
 </html>
