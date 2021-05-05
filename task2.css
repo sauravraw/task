@@ -1,0 +1,25 @@
+.boxA {
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  position: relative;
+  overflow: hidden;
+}
+.boxB {
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
