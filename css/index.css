@@ -1,41 +1,18 @@
-.main {
+.boxA {
   width: 500px;
   height: 500px;
   border: 1px solid black;
   position: relative;
   overflow: hidden;
 }
-
-.boxA {
-  width: 200px;
-  height: 200px;
-  border: 1px solid red;
-  position: absolute;
-  left: 0;
-}
-
 .boxB {
   width: 200px;
   height: 200px;
   border: 1px solid red;
   position: absolute;
-  right: 0;
-}
-.boxC {
-  width: 200px;
-  height: 200px;
-  border: 1px solid red;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
-.boxD {
-  width: 200px;
-  height: 200px;
-  border: 1px solid red;
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .text {
@@ -45,4 +22,44 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.main {
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  position: relative;
+  overflow: hidden;
+}
+
+.boxP {
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+  position: absolute;
+  left: 0;
+}
+
+.boxQ {
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+  position: absolute;
+  right: 0;
+}
+.boxR {
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.boxS {
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
